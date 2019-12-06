@@ -23,11 +23,13 @@
 
 .features {
     padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .quick-start {
     background-color: #EEEEEE;
     padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 /* .quick-start code {
@@ -54,6 +56,7 @@
 
 .discuss {
     padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .footer {
