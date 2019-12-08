@@ -86,17 +86,3 @@
     line-height: 1;
     letter-spacing: -1px;
 }
-
-
-.tutorial-wrapper {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.tutorial {
-    margin-top: 100px;
-}
-
-.tutorial a {
-    color: black;
-}
