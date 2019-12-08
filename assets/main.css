@@ -15,7 +15,13 @@
     color: white;
 }
 
-.container h1 h2 {
+.container h1 {
+    font-family: lato;
+    font-style: italic;
+    color: white;
+}
+
+.container h2 {
     font-family: lato;
     font-style: italic;
     color: white;
@@ -85,4 +91,18 @@
     font-size: 4em;
     line-height: 1;
     letter-spacing: -1px;
+}
+
+.research-container {
+    margin: 100px auto;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.research-container h2 {
+    padding-bottom: 20px;
+}
+
+.research-container li {
+    padding-bottom: 1em;
 }
