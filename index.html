@@ -35,14 +35,15 @@ layout: default
                 <h5>Differentiable</h5>
                 <p>
                     Yao is differentiable. It supports forward-mode (faithful gradient)
-                    and reverse-mode automatic differentiation.
+                    and reverse-mode automatic differentiation with its builtin engine
+                    optimized specifically for quantum circuits.
                 </p>
             </div>
 
             <div class="col-md feature">
                 <h5>Efficient</h5>
                 <p>
-                    Yao provides top performance for quantum circuit simulations. Its CUDA backend and
+                    Yao provides <a href="{{ site.baseurl }}/benchmark">top performance</a> for quantum circuit simulations. Its CUDA backend and
                     batched quantum register support can make typical quantum circuits even faster.
                 </p>
             </div>
@@ -50,7 +51,8 @@ layout: default
             <div class="col-md feature">
                 <h5>Extensible</h5>
                 <p>
-                    Yao is designed to be extensible. Extend the framework to support and share your
+                    Yao is designed to be extensible. Its hierarchical architecture allows
+                    you to extend the framework to support and share your
                     new algorithm and hardware.
                 </p>
             </div>
