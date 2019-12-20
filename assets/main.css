@@ -32,6 +32,10 @@
     padding-bottom: 2em;
 }
 
+.features p {
+    color: gray;
+}
+
 .quick-start {
     background-color: #EEEEEE;
     padding-top: 2em;
