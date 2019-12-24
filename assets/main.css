@@ -111,11 +111,6 @@
     padding-bottom: 1em;
 }
 
- #override-documenter .docs-sidebar ul.docs-menu {
-    flex-grow: 0;
-    user-select: none;
-    font-size: 1rem;
-    border-top: 1px solid #dbdbdb;
-    padding-bottom: 1.5em;
-    /* Managing collapsible submenus */
+#override-documenter .docs-sidebar ul.docs-menu {
+    flex-grow: 0 !important;
 }
