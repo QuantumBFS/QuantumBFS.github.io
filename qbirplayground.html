@@ -59,7 +59,7 @@
                 //var e = window.event
 
                 // If the user has pressed enter
-                if (event.ctrlKey && (event.keyCode === 10 || event.keyCode === 13)) {
+                if (!event.shiftKey && (event.keyCode === 10 || event.keyCode === 13)) {
                     sendtext();
                     event.preventDefault();
                     return false;
@@ -112,7 +112,7 @@
                     </div>
                     <div class="form-group col-sm-11" style="margin-top:10px">
                         <h6 for="yaoinstruct" class="control-label">Instruction</h6>
-                        <textarea class="form-control" onkeypress="ontextchange()" placeholder="<Ctrl> + <Enter> to send the instruction." id="yaoinstruct" style="margin-top:10px"></textarea>
+                        <textarea class="form-control" onkeypress="ontextchange()" placeholder="<Enter> to send the instruction, <Shift-Enter> to change line." id="yaoinstruct" style="margin-top:10px"></textarea>
                     </div>
 
                     <div class="form-group col-sm-11">
