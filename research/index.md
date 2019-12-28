@@ -3,7 +3,18 @@ layout: research
 title: Research
 ---
 
-## Papers citing Yao
+## Cite
+
+```bib
+@article{YaoFramework2019,
+  title={Yao.jl: Extensible, Efficient Framework for Quantum Algorithm Design},
+  author={Xiu-Zhe Luo and Jin-Guo Liu and Pan Zhang and Lei Wang},
+  journal={arXiv preprint arXiv:1912.10877},
+  year={2019}
+}
+```
+
+## Papers Citing Yao
 
 - **Variational Quantum Eigensolver with Fewer Qubits** Jin-Guo Liu, Yi-Hong Zhang, Yuan Wan, Lei Wang. [arXiv preprint arXiv 1902.02663](https://arxiv.org/abs/1902.02663)
 - **Learning and inference on generative adversarial quantum circuits** Jinfeng Zeng, Yufeng Wu, Jin-Guo Liu, Lei Wang, and Jiangping Hu, Phys. Rev. A 99, 052306 – Published 6 May 2019
