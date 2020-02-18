@@ -114,3 +114,12 @@
 #override-documenter .docs-sidebar ul.docs-menu {
     flex-grow: 0 !important;
 }
+
+.organizations {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.organizations h3 {
+    color: gray;
+}
