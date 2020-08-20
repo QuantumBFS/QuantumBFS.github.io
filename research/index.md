@@ -16,6 +16,7 @@ title: Research
 
 ## Papers Citing Yao
 
+- **Tropical Tensor Network for Ground States of Spin Glasses** Jin-Guo Liu, Lei Wang, Pan Zhang [arXiv preprint arXiv:2008.06888](https://arxiv.org/abs/2008.06888)
 - **Quantum Adversarial Machine Learning** Sirui Lu, Lu-Ming Duan and Dong-Ling Deng [arXiv preprint arXiv:2001.00030](https://arxiv.org/abs/2001.00030)
 - **QDNN: DNN with Quantum Neural Network Layers** Chen Zhao and Xiao-Shan Gao [arXiv preprint arXiv:1912.12660](https://arxiv.org/abs/1912.12660)
 - **Variational Quantum Eigensolver with Fewer Qubits** Jin-Guo Liu, Yi-Hong Zhang, Yuan Wan, Lei Wang. [arXiv preprint arXiv 1902.02663](https://arxiv.org/abs/1902.02663)
