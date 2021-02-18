@@ -1,0 +1,68 @@
+{{ if hasmath }}
+    {{ insert foot_katex.html }}
+{{ end }}
+{{ if hascode }}
+    {{ insert foot_highlight.html }}
+{{ end }}
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="page-footer footer font-small pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5>The Yao Framework</h5>
+          <p>Extensible Efficient Quantum Algorithm Design For Humans.</p>
+          <div class="copyright">
+            &copy; {{ fill author }}. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+          </div>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Resources</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="{{ fill tutorial_url }}">Tutorial</a>
+            </li>
+            <li>
+              <a href="{{ fill docs_url }}">Docs</a>
+            </li>
+            <li>
+              <a href="{{ fill github_issues_url }}">Github Issues</a>
+            </li>
+            <li>
+              <a href="{{ fill julia_slack_url }}">Slack</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+</footer>
+
+{{ insert foot_scripts.html }}
+
+{{ if hascode }}
+    {{ insert foot_code.html }}
+{{ end }}
