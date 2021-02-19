@@ -25,9 +25,8 @@ jobs:
       with:
         version: 1.5
     - name: Instantiate Deploy Environment
-      run: julia --project=pluto-deploy-environment -e '
-        import Pkg;
-        Pkg.instantiate()'
+      run: julia --project=pluto-deploy-environment -e 'using Pkg;Pkg.instantiate()'
+      run: julia --project=pluto-deploy-environment -e 'using Pkg;Pkg.status()'
     - name: Build Tutorials
       run: julia --project=pluto-deploy-environment tutorials/make.jl
     # NOTE
