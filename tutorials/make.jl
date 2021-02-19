@@ -24,8 +24,10 @@ function generate(title, file)
             <script>
                 // there is only one pluto notebook load to page each time
                 var iframe = document.getElementsByClassName('plutopage')[0];
-                iframe.onload = function () {
-                iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+                iframe.onload =  function () {
+                    setTimeout(function() {
+                        iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+                    }, 500);
                 }
             </script>
         </body>
@@ -66,7 +68,7 @@ function sidebar(sections)
     write("_layout/sidebar.html", """
     <div class="sidebar">
     <div class="container sidebar-sticky">
-      <a class="sidebar-nav-item {{ispage /tutorials/}}active{{end}}" href="/tutorials/"><b>Quick Start</b></a>
+      <a class="sidebar-nav-item {{ispage /tutorials/}}active{{end}}" href="/tutorials/quick-start"><b>Quick Start</b></a>
       <br>
       <nav class="sidebar-nav" style="opacity: 0.9">
         $(join(section_htmls))
@@ -98,5 +100,6 @@ pages = [
     ],
 ]
 
+generate("Quick Start", "quick-start")
 generate(pages)
 sidebar(pages)
