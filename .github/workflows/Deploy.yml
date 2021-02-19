@@ -24,13 +24,12 @@ jobs:
       uses: julia-actions/setup-julia@v1
       with:
         version: 1.5
-    - name: Run Pluto Notebooks
+    - name: Instantiate Deploy Environment
       run: julia --project=pluto-deploy-environment -e '
         import Pkg;
-        Pkg.instantiate();
-
-        import PlutoUtils;
-        PlutoUtils.Export.github_action(;export_dir=".", baked_state=false);'
+        Pkg.instantiate()'
+    - name: Build Tutorials
+      run: julia --project=pluto-deploy-environment tutorials/make.jl
     # NOTE
     #   The steps below ensure that NodeJS and Franklin are loaded then it
     #   installs highlight.js which is needed for the prerendering step
@@ -43,10 +42,6 @@ jobs:
             using Pkg; Pkg.activate("."); Pkg.instantiate();
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);
             using Franklin;
-
-            notebook_path = "__site/tutorials/notebooks/Pluto";
-            ispath(notebook_path) || mkpath(notebook_path);
-            cp("tutorials/notebooks/Pluto", "__site/tutorials/notebooks"; force=true)
             optimize()'
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
