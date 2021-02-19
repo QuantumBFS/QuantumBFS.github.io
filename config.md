@@ -24,7 +24,7 @@ Add here files or directories that should be ignored by Franklin, otherwise
 these files might be copied and, if markdown, processed by Franklin which
 you might not want. Indicate directories by ending the name with a `/`.
 -->
-@def ignore = ["tutorials/", "README.md", "node_modules/", "franklin", "franklin.pub"]
+@def ignore = ["notebooks/", "README.md", "node_modules/", "franklin", "franklin.pub"]
 @def div_content = "container page"
 <!--
 Add here global latex commands to use throughout your
