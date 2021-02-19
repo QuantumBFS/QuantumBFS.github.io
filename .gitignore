@@ -5,5 +5,5 @@ franklin.pub
 node_modules/
 notebooks/*.html
 notebooks/*.plutostate
-tutorials/
+tutorials/*
 !tutorials/make.jl
