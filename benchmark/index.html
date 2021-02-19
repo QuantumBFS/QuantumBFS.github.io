@@ -67,7 +67,7 @@
 
 <!-- Content appended here -->
 <div class="container page"><p>More detailed benchmark, please check <a href="https://github.com/Roger-luo/quantum-benchmarks">quantum-benchmark</a>.</p>
-<h2 id="single_gate_benchmark"><a href="#single_gate_benchmark">Single Gate Benchmark</a></h2>
+<h2 id="single_gate_benchmark"><a href="#single_gate_benchmark" class="header-anchor">Single Gate Benchmark</a></h2>
 <p>Benchmarks of a&#41; Pauli-X gate; b&#41; Hadamard gate; c&#41; CNOT gate; d&#41; Toffolli gate.</p>
 
 <img src="https://github.com/Roger-luo/quantum-benchmarks/raw/master/images/gates.png" alt="single-gate-benchmark" width="100%">
@@ -75,7 +75,7 @@
 
 <img src="https://github.com/Roger-luo/quantum-benchmarks/raw/master/images/gates_relative.png" alt="single-gate-relative" width="100%">
 
-<h2 id="parameterized_circuit_benchmark"><a href="#parameterized_circuit_benchmark">Parameterized Circuit Benchmark</a></h2>
+<h2 id="parameterized_circuit_benchmark"><a href="#parameterized_circuit_benchmark" class="header-anchor">Parameterized Circuit Benchmark</a></h2>
 <p>b&#41; Benchmarks of parameterized circuit. c&#41; Benchmarks of parametrized circuit with batched registers &#40;batch size &#61; 1000&#41;.</p>
 <p>NOTE:</p>
 <p>qiskit state vector simulator does not support rotation x/z gate, thus there is no benchmark on the following circuits. PennyLane benchmark contains some overhead from error handling since we do not include measurement in this benchmark &#40;<a href="https://github.com/Roger-luo/quantum-benchmarks/pull/7">#7</a>&#41; the performance of CUDA may vary on different machine &#40;<a href="https://github.com/Roger-luo/quantum-benchmarks/issues/6">#6</a>&#41;, although the difference is not very huge</p>

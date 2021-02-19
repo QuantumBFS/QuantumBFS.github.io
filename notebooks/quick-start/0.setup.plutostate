@@ -1,0 +1,75 @@
+ˆªcell_order’Ù$c788534a-ee16-4972-91ce-b0b3ed2799faÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35¥bonds€¬cell_results‚Ù$01ebf798-c068-4115-9cb9-381f5d8e8b35†¦queuedÂ§runningÂ¦output…¤bodyÚ%<div class="markdown"><h2>Julia Basics</h2>
+<p>You can jump to next section if you already know how to use Julia. We will only be introduce some basic concepts of Julia and differences comparing to Python in this section, if you wish to learn this language more seriously please refer to the learning materials on the official website: <a href="https://julialang.org/learning/">julialang.org/learning/</a>. This short Julia tutorial is based on <a href="https://computationalthinking.mit.edu/">MIT computational thinking course</a>.</p>
+<p>If you haven&#39;t installed Julia, please refer to the front page of Julia: <a href="https://julialang.org/">julialang.org</a></p>
+<p>If you wish to run this notebook locally, you will need to install <a href="https://github.com/fonsp/Pluto.jl">Pluto</a>:</p>
+<ol>
+<li><p>open your <a href="https://docs.julialang.org/en/v1/manual/getting-started/">Julia interactive session &#40;known as REPL&#41;</a></p>
+</li>
+<li><p>press <code>&#93;</code> key in the REPL to use the package mode, then type the following command</p>
+</li>
+</ol>
+<pre><code class="language-julia">pkg&gt; add Pluto</code></pre>
+<p>you will now see Julia&#39;s package manager start downloading this package. After the download is finished, press <code>backspace</code> and run the following command.</p>
+<pre><code class="language-julia">julia&gt; import Pluto
+
+julia&gt; Pluto.run&#40;&#41;</code></pre>
+<p>now it should open a web page for you in the browser, choose the downloaded notebook file <code>quick-start.jl</code>, you are good to go&#33;</p>
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØÝ(š•¬rootassigneeÀ§cell_idÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35§runtimeÍBÌ§erroredÂÙ$c788534a-ee16-4972-91ce-b0b3ed2799fa†¦queuedÂ§runningÂ¦output…¤bodyÚ<div class="markdown"><h1>Quick Start Guide</h1>
+<p>This guide is for people who:</p>
+<ul>
+<li><p>doesn&#39;t know much Julia but knows Python &#40;or other programming languages&#41;</p>
+</li>
+<li><p>knows quantum computing basics</p>
+</li>
+<li><p>want to try out programming quantum circuits quickly with Julia</p>
+</li>
+</ul>
+<p>the contents are organized as following</p>
+<ol>
+<li><p>Julia Basics</p>
+</li>
+<li><p>Basic Concepts of Yao</p>
+</li>
+<li><p>How to write a Quantum Circuit Born Machine using Yao</p>
+</li>
+</ol>
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØÝ(~,¬rootassigneeÀ§cell_idÙ$c788534a-ee16-4972-91ce-b0b3ed2799fa§runtimeÍHD§erroredÂ«cell_inputs‚Ù$01ebf798-c068-4115-9cb9-381f5d8e8b35ƒ§cell_idÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35¤codeÚmd"""
+## Julia Basics
+
+You can jump to next section if you already know how to use Julia. We will only be introduce some basic concepts of Julia and differences comparing to Python in this section, if you wish to learn this language more seriously please refer to the learning materials on the official website: [julialang.org/learning/](https://julialang.org/learning/). This short Julia tutorial is based on [MIT computational thinking course](https://computationalthinking.mit.edu/).
+
+If you haven't installed Julia, please refer to the front page of Julia: [julialang.org](https://julialang.org/)
+
+If you wish to run this notebook locally, you will need to install [Pluto](https://github.com/fonsp/Pluto.jl):
+
+1. open your [Julia interactive session (known as REPL)](https://docs.julialang.org/en/v1/manual/getting-started/)
+2. press `]` key in the REPL to use the package mode, then type the following command
+
+```julia
+pkg> add Pluto
+```
+
+you will now see Julia's package manager start downloading this package. After the download is finished, press `backspace` and run the following command.
+
+```julia
+julia> import Pluto
+
+julia> Pluto.run()
+```
+
+now it should open a web page for you in the browser, choose the downloaded notebook file `quick-start.jl`, you are good to go!
+"""«code_foldedÃÙ$c788534a-ee16-4972-91ce-b0b3ed2799faƒ§cell_idÙ$c788534a-ee16-4972-91ce-b0b3ed2799fa¤codeÚxmd"""
+# Quick Start Guide
+
+This guide is for people who:
+
+- doesn't know much Julia but knows Python (or other programming languages)
+- knows quantum computing basics
+- want to try out programming quantum circuits quickly with Julia
+
+the contents are organized as following
+
+1. Julia Basics
+2. Basic Concepts of Yao
+3. How to write a Quantum Circuit Born Machine using Yao
+"""«code_foldedÃ«notebook_idÙ$a8db8bba-72ee-11eb-0dbf-71114686c56e«in_temp_dirÂ©shortpathª0.setup.jl¤pathÙ\/home/runner/work/QuantumBFS.github.io/QuantumBFS.github.io/notebooks/quick-start/0.setup.jl

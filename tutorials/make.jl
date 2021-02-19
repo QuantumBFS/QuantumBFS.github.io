@@ -69,9 +69,6 @@ function sidebar(sections)
     <div class="sidebar">
     <div class="container sidebar-sticky">
       <nav class="sidebar-nav" style="opacity: 0.9">
-        <div class="course-section"></div>
-        <br>
-        <a class="sidebar-nav-item {{ispage /tutorials/quick-start}}active{{end}}" href="/tutorials/quick-start"><b>Quick Start</b></a>
         $(join(section_htmls))
       </nav>
     </div>
@@ -86,6 +83,11 @@ ispath("__site/notebooks") || mkpath("__site/notebooks")
 cp("notebooks", "__site/notebooks"; force=true)
 
 pages = [
+    ("Quick Start", "quick-start") => [
+        "Setup Your Environment" => "0.setup",
+        "Julia Basics" => "1.julia_basics",
+        "Yao Basics" => "2.yao_basics",
+    ],
     ("Getting Started", "getting-started") => [
         "Introduction" => "1-introduction"
         "Gates & Qubits" => "2-gates_and_qubits"
@@ -101,14 +103,5 @@ pages = [
     ],
 ]
 
-generate("Quick Start", "quick-start")
 generate(pages)
 sidebar(pages)
-
-
-# ```math
-# \begin{aligned}
-# \frac{\partial \mathcal{L}}{\partial \theta^i_l} &= \langle K(x, y) \rangle_{x\sim p_{\theta^+}, y\sim p_{\theta}} - \langle K(x, y) \rangle_{x\sim p_{\theta}^-, y\sim p_{\theta}}\\
-# &- \langle K(x, y) \rangle _{x\sim p_{\theta^+}, y\sim\pi} + \langle K(x, y) \rangle_{x\sim p_{\theta^-}, y\sim\pi}
-# \end{aligned}
-# ```
