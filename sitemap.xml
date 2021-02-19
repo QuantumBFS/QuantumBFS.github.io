@@ -26,7 +26,73 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://yaoquantum.org/tutorials/getting-started/6-quantum_arithmetic/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://yaoquantum.org/tutorials/getting-started/1-introduction/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://yaoquantum.org/tutorials/getting-started/4-applications/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://yaoquantum.org/index/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://yaoquantum.org/tutorials/getting-started/8-deutsch/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://yaoquantum.org/tutorials/getting-started/5-more_gates/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://yaoquantum.org/tutorials/getting-started/assignment1/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://yaoquantum.org/tutorials/getting-started/2-gates_and_qubits/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://yaoquantum.org/tutorials/getting-started/3-yao_code/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://yaoquantum.org/tutorials/getting-started/10-qram/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://yaoquantum.org/tutorials/getting-started/9-simon/</loc>
+    <lastmod>2021-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://yaoquantum.org/tutorials/getting-started/7-grovers/</loc>
     <lastmod>2021-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
