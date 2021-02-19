@@ -8,6 +8,7 @@ The website_* must be defined for the RSS to work
 @def website_url   = "https://yaoquantum.org"
 
 @def author = "QuantumBFS"
+@def title = "Yao - Quantum Computing in Julia"
 @def home_url = "https://yaoquantum.org"
 @def tutorial_url = "https://tutorials.yaoquantum.org/dev/"
 @def benchmark_url = "/benchmark/"
@@ -23,7 +24,7 @@ Add here files or directories that should be ignored by Franklin, otherwise
 these files might be copied and, if markdown, processed by Franklin which
 you might not want. Indicate directories by ending the name with a `/`.
 -->
-@def ignore = ["node_modules/", "franklin", "franklin.pub"]
+@def ignore = ["tutorials/", "README.md", "node_modules/", "franklin", "franklin.pub"]
 @def div_content = "container page"
 <!--
 Add here global latex commands to use throughout your
