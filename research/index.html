@@ -1,4 +1,77 @@
-<!doctype html> <html lang=en > <meta charset=utf-8 > <meta name=viewport  content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv=x-ua-compatible  content="ie=edge"> <meta name=author  content="Xiu-Zhe Luo, Jin-guo Liu, Pan Zhang, Lei Wang et al."> <meta name=description  content="The official website for the Yao framework. Yao is a framework for quantum computing in JuliaLanguage. Click here to learn more."> <meta name=robots  content="max-image-preview:large"> <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/libs/highlight/github.min.css"> <script async defer src="https://buttons.github.io/buttons.js"></script> <link rel=stylesheet  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin=anonymous > <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin=anonymous ></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity=sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns  crossorigin=anonymous ></script> <link rel=stylesheet  href="/css/page.css"> <link rel=stylesheet  href="/css/main.css"> <link rel=icon  href="/assets/favicon-dark.ico" id=dark-scheme-icon > <link rel=icon  href="/assets/favicon-light.ico" id=light-scheme-icon > <title>Yao - Quantum Computing in Julia</title> <header> <nav class="navbar navbar-expand-lg navbar-dark navbar-yao"> <a class="navbar-brand nav-logo" href="https://yaoquantum.org"> <img src="/assets/logo-light.svg" width=40 > </a> <button class=navbar-toggler  type=button  data-toggle=collapse  data-target="#navbarSupportedContent" aria-controls=navbarSupportedContent  aria-expanded=false  aria-label="Toggle navigation"> <span class=navbar-toggler-icon ></span> </button> <div class="collapse navbar-collapse" id=navbarSupportedContent > <ul class="navbar-nav mr-auto"> <li class="nav-item active"> <a class=nav-link  href="https://yaoquantum.org">Home <span class=sr-only >(current)</span></a> <li class=nav-item > <a class=nav-link  href="https://tutorials.yaoquantum.org/dev/">Tutorial</a> <li class=nav-item > <a class=nav-link  href="https://docs.yaoquantum.org/dev/">Documentation</a> <li class=nav-item > <a class=nav-link  href="/benchmark/">Benchmarks</a> <li class=nav-item > <a class=nav-link  href="/soc">SoC</a> <li class=nav-item > <a class=nav-link  href="/research">Research</a> <li class=nav-item > <a class=nav-link  href="#">GitHub</a> </ul> </div> </nav> </header> <div class=main > <div class="container page"><h2 id=cite ><a href="#cite">Cite</a></h2> <div class=highlight > <pre><code class=language-bib >@article&#123;Luo2020yaojlextensible,
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="author" content="Xiu-Zhe Luo, Jin-guo Liu, Pan Zhang, Lei Wang et al.">
+<meta name="description" content="The official website for the Yao framework. Yao is a framework for quantum computing in JuliaLanguage. Click here to learn more.">
+<meta name="robots" content="max-image-preview:large">
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Boostrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="/css/page.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" href="/assets/favicon-dark.ico" id="dark-scheme-icon">
+<link rel="icon" href="/assets/favicon-light.ico" id="light-scheme-icon">
+ <title>Yao - Quantum Computing in Julia</title>  
+
+  </head>
+<body>
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-yao">
+    <a class="navbar-brand nav-logo" href="https://yaoquantum.org">
+        <img src="/assets/logo-light.svg" width="40">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="https://yaoquantum.org">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://tutorials.yaoquantum.org/dev/">Tutorial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://docs.yaoquantum.org/dev/">Documentation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/benchmark/">Benchmarks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/soc">SoC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/research">Research</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">GitHub</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+</header>
+<div class="main">
+
+<!-- Content appended here -->
+<div class="container page"><h2 id="cite"><a href="#cite">Cite</a></h2>
+
+<div class="highlight">
+
+<pre><code class="language-bib">@article&#123;Luo2020yaojlextensible,
   doi &#61; &#123;10.22331/q-2020-10-11-341&#125;,
   url &#61; &#123;https://doi.org/10.22331/q-2020-10-11-341&#125;,
   title &#61; &#123;Yao.jl: &#123;E&#125;xtensible, &#123;E&#125;fficient &#123;F&#125;ramework for &#123;Q&#125;uantum &#123;A&#125;lgorithm &#123;D&#125;esign&#125;,
@@ -10,4 +83,211 @@
   pages &#61; &#123;341&#125;,
   month &#61; oct,
   year &#61; &#123;2020&#125;
-&#125;</code></pre> </div> <h2 id=papers_citing_yao ><a href="#papers_citing_yao">Papers Citing Yao</a></h2> <h3 id=2020 ><a href="#2020">2020</a></h3> <ul> <li><p>Efficient calculation of gradients in classical simulations of variational quantum algorithms, Tyson Jones, Julien Gacon, <a href="https://arxiv.org/abs/2009.02823">arXiv:2009.02823</a></p> <li><p>Quantum adversarial machine learning, Si-Rui Lu, Lu-Ming Duan, and Dong-Ling Deng, <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033212">Physical Review Research, 2&#40;3&#41;, 033212</a></p> <li><p>Variational Preparation of the Sachdev-Ye-Kitaev Thermofield Double, Vincent Paul Su, <a href="https://arxiv.org/abs/2009.04488">arXiv: 2009.04488</a></p> <li><p>Quingo: A Programming Framework for Heterogeneous Quantum-Classical Computing with NISQ Features, The Quingo Development Team, <a href="https://arxiv.org/abs/2009.01686">arXiv:2009.01686</a></p> <li><p>Contracting Arbitrary Tensor Networks: General Approximate Algorithm and Applications in Graphical Models and Quantum Circuit Simulations, Feng Pan, Pengfei Zhou, Sujie Li and Pan Zhang, <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.060503">Phys. Rev. Lett. 125, 060503</a></p> <li><p>Quantum Adversarial Machine Learning, Sirui Lu, Lu-Ming Duan and Dong-Ling Deng <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033212">Phys. Rev. Research 2, 033212</a></p> <li><p>Tropical Tensor Network for Ground States of Spin Glasses, Jin-Guo Liu, Lei Wang, Pan Zhang <a href="https://arxiv.org/abs/2008.06888">arXiv:2008.06888</a></p> <li><p>Estimating the gradient and higher-order derivatives on quantum hardware, Andrea Mari, Thomas R. Bromley, Nathan Killoran, <a href="https://arxiv.org/abs/2008.06517">arXiv:2008.06517</a></p> <li><p>Variational Quantum Eigensolver with Fewer Qubits, Jin-Guo Liu, Yi-Hong Zhang, Yuan Wan, Lei Wang. <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.1.023025">Phys. Rev. Research 1, 023025</a></p> <li><p>Fast and stable determinant quantum Monte Carlo, Carsten Bauer, <a href="https://scipost.org/10.21468/SciPostPhysCore.2.2.011">SciPost Phys. Core 2, 011</a></p> <li><p>Probabilistic Nonunitary Gate in Imaginary Time Evolution, Tong Liu, Jin-Guo Liu, Lei Wang, and Heng Fan, <a href="https://arxiv.org/abs/2006.09726">arXiv:2006.09726</a></p> <li><p>Non-Differentiable Learning of Quantum Circuit Born Machine with Genetic Algorithm, Alexei Kondratyev, <a href="https://papers.ssrn.com/sol3/Papers.cfm?abstract_id&#61;3569226">SSRN 3569226</a></p> <li><p>Differentiate Everything with a Reversible Programming Language, Jin-Guo Liu, and Taine Zhao, <a href="https://arxiv.org/abs/2003.04617">arXiv:2003.04617</a></p> </ul> <h3 id=2019 ><a href="#2019">2019</a></h3> <ul> <li><p>QDNN: DNN with Quantum Neural Network Layers, Chen Zhao and Xiao-Shan Gao <a href="https://arxiv.org/abs/1912.12660">arXiv:1912.12660</a></p> <li><p>Solving Quantum Statistical Mechanics with Variational Autoregressive Networks and Quantum Circuits, Jin-Guo Liu, Liang Mao, Pan Zhang, Lei Wang, <a href="https://iopscience.iop.org/article/10.1088/2632-2153/aba19d/meta">Machine Learning: Science and Technology</a></p> <li><p>Parameterized quantum circuits as machine learning models, Marcello Benedetti, Erika Lloyd, and Stefan Sack <a href="https://iopscience.iop.org/article/10.1088/2058-9565/ab4eb5">Quantum Science and Technology</a></p> <li><p>Zygote: A Differentiable Programming System to Bridge Machine Learning and Scientific Computing, Innes, Mike and Edelman, Alan and Fischer, Keno and Rackauckus, Chris and Saba, Elliot and Shah, Viral B and Tebbutt, Will <a href="https://arxiv.org/abs/1907.07587">arXiv:1907.07587</a></p> <li><p>Learning and inference on generative adversarial quantum circuits, Jin-Feng Zeng, Yu-Feng Wu, Jin-Guo Liu, Lei Wang, and Jiang-Ping Hu, <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.052306">Phys. Rev. A 99, 052306</a></p> </ul> </div> <script src="/libs/highlight/highlight.pack.js"></script> <script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: ' '});</script> <footer class="page-footer footer font-small pt-4"> <div class="container-fluid text-center text-md-left"> <div class=row > <div class="col-md-6 mt-md-0 mt-3"> <h5>The Yao Framework</h5> <p>Extensible Efficient Quantum Algorithm Design For Humans.</p> <div class=copyright > &copy; QuantumBFS. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>. </div> </div> <hr class="clearfix w-100 d-md-none pb-3"> <div class="col-md-3 mb-md-0 mb-3"> </div> <div class="col-md-3 mb-md-0 mb-3"> <h5 class=text-uppercase >Resources</h5> <ul class=list-unstyled > <li> <a href="https://tutorials.yaoquantum.org/dev/">Tutorial</a> <li> <a href="https://docs.yaoquantum.org/dev/">Docs</a> <li> <a href="https://github.com/QuantumBFS/Yao.jl/issues">Github Issues</a> <li> <a href="https://julialang.org/slack/">Slack</a> </ul> </div> </div> </div> </footer> <script> lightSchemeIcon = document.querySelector('link#light-scheme-icon'); darkSchemeIcon = document.querySelector('link#dark-scheme-icon'); function onUpdate() { if (matcher.matches) { lightSchemeIcon.remove(); document.head.append(darkSchemeIcon); } else { document.head.append(lightSchemeIcon); darkSchemeIcon.remove(); } } matcher = window.matchMedia('(prefers-color-scheme: dark)'); matcher.addListener(onUpdate); onUpdate(); </script> <script> function createCopyButton(highlightDiv) { const button = document.createElement("button"); button.className = "copy-code-button"; button.type = "button"; button.innerText = "Copy"; button.addEventListener("click", () => copyCodeToClipboard(button, highlightDiv)); addCopyButtonToDom(button, highlightDiv); } async function copyCodeToClipboard(button, highlightDiv) { const codeToCopy = highlightDiv.querySelector(":last-child > code").innerText; try { result = await navigator.permissions.query({ name: "clipboard-write" }); if (result.state == "granted" || result.state == "prompt") { await navigator.clipboard.writeText(codeToCopy); } else { copyCodeBlockExecCommand(codeToCopy, highlightDiv); } } catch (_) { copyCodeBlockExecCommand(codeToCopy, highlightDiv); } finally { codeWasCopied(button); } } function copyCodeBlockExecCommand(codeToCopy, highlightDiv) { const textArea = document.createElement("textArea"); textArea.contentEditable = 'true' textArea.readOnly = 'false' textArea.className = "copyable-text-area"; textArea.value = codeToCopy; highlightDiv.insertBefore(textArea, highlightDiv.firstChild); const range = document.createRange() range.selectNodeContents(textArea) const sel = window.getSelection() sel.removeAllRanges() sel.addRange(range) textArea.setSelectionRange(0, 999999) document.execCommand("copy"); highlightDiv.removeChild(textArea); } function codeWasCopied(button) { button.blur(); button.innerText = "Copied!"; setTimeout(function() { button.innerText = "Copy"; }, 2000); } function addCopyButtonToDom(button, highlightDiv) { highlightDiv.insertBefore(button, highlightDiv.firstChild); const wrapper = document.createElement("div"); wrapper.className = "highlight-wrapper"; highlightDiv.parentNode.insertBefore(wrapper, highlightDiv); wrapper.appendChild(highlightDiv); } document.querySelectorAll(".highlight") .forEach(highlightDiv => createCopyButton(highlightDiv)); </script> </div> <script> // there is only one pluto notebook load to page each time var iframe = document.getElementsByClassName('plutopage')[0]; iframe.onload = function () { iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px'; } </script>
+&#125;</code></pre>
+
+</div>
+
+<h2 id="papers_citing_yao"><a href="#papers_citing_yao">Papers Citing Yao</a></h2>
+<h3 id="2020"><a href="#2020">2020</a></h3>
+<ul>
+<li><p>Efficient calculation of gradients in classical simulations of variational quantum algorithms, Tyson Jones, Julien Gacon, <a href="https://arxiv.org/abs/2009.02823">arXiv:2009.02823</a></p>
+</li>
+<li><p>Quantum adversarial machine learning, Si-Rui Lu, Lu-Ming Duan, and Dong-Ling Deng, <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033212">Physical Review Research, 2&#40;3&#41;, 033212</a></p>
+</li>
+<li><p>Variational Preparation of the Sachdev-Ye-Kitaev Thermofield Double, Vincent Paul Su, <a href="https://arxiv.org/abs/2009.04488">arXiv: 2009.04488</a></p>
+</li>
+<li><p>Quingo: A Programming Framework for Heterogeneous Quantum-Classical Computing with NISQ Features, The Quingo Development Team, <a href="https://arxiv.org/abs/2009.01686">arXiv:2009.01686</a></p>
+</li>
+<li><p>Contracting Arbitrary Tensor Networks: General Approximate Algorithm and Applications in Graphical Models and Quantum Circuit Simulations, Feng Pan, Pengfei Zhou, Sujie Li and Pan Zhang, <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.060503">Phys. Rev. Lett. 125, 060503</a></p>
+</li>
+<li><p>Quantum Adversarial Machine Learning, Sirui Lu, Lu-Ming Duan and Dong-Ling Deng <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033212">Phys. Rev. Research 2, 033212</a></p>
+</li>
+<li><p>Tropical Tensor Network for Ground States of Spin Glasses, Jin-Guo Liu, Lei Wang, Pan Zhang <a href="https://arxiv.org/abs/2008.06888">arXiv:2008.06888</a></p>
+</li>
+<li><p>Estimating the gradient and higher-order derivatives on quantum hardware, Andrea Mari, Thomas R. Bromley, Nathan Killoran, <a href="https://arxiv.org/abs/2008.06517">arXiv:2008.06517</a></p>
+</li>
+<li><p>Variational Quantum Eigensolver with Fewer Qubits, Jin-Guo Liu, Yi-Hong Zhang, Yuan Wan, Lei Wang. <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.1.023025">Phys. Rev. Research 1, 023025</a></p>
+</li>
+<li><p>Fast and stable determinant quantum Monte Carlo, Carsten Bauer, <a href="https://scipost.org/10.21468/SciPostPhysCore.2.2.011">SciPost Phys. Core 2, 011</a></p>
+</li>
+<li><p>Probabilistic Nonunitary Gate in Imaginary Time Evolution, Tong Liu, Jin-Guo Liu, Lei Wang, and Heng Fan, <a href="https://arxiv.org/abs/2006.09726">arXiv:2006.09726</a></p>
+</li>
+<li><p>Non-Differentiable Learning of Quantum Circuit Born Machine with Genetic Algorithm, Alexei Kondratyev, <a href="https://papers.ssrn.com/sol3/Papers.cfm?abstract_id&#61;3569226">SSRN 3569226</a></p>
+</li>
+<li><p>Differentiate Everything with a Reversible Programming Language, Jin-Guo Liu, and Taine Zhao, <a href="https://arxiv.org/abs/2003.04617">arXiv:2003.04617</a></p>
+</li>
+</ul>
+<h3 id="2019"><a href="#2019">2019</a></h3>
+<ul>
+<li><p>QDNN: DNN with Quantum Neural Network Layers, Chen Zhao and Xiao-Shan Gao <a href="https://arxiv.org/abs/1912.12660">arXiv:1912.12660</a></p>
+</li>
+<li><p>Solving Quantum Statistical Mechanics with Variational Autoregressive Networks and Quantum Circuits, Jin-Guo Liu, Liang Mao, Pan Zhang, Lei Wang, <a href="https://iopscience.iop.org/article/10.1088/2632-2153/aba19d/meta">Machine Learning: Science and Technology</a></p>
+</li>
+<li><p>Parameterized quantum circuits as machine learning models, Marcello Benedetti, Erika Lloyd, and Stefan Sack <a href="https://iopscience.iop.org/article/10.1088/2058-9565/ab4eb5">Quantum Science and Technology</a></p>
+</li>
+<li><p>Zygote: A Differentiable Programming System to Bridge Machine Learning and Scientific Computing, Innes, Mike and Edelman, Alan and Fischer, Keno and Rackauckus, Chris and Saba, Elliot and Shah, Viral B and Tebbutt, Will <a href="https://arxiv.org/abs/1907.07587">arXiv:1907.07587</a></p>
+</li>
+<li><p>Learning and inference on generative adversarial quantum circuits, Jin-Feng Zeng, Yu-Feng Wu, Jin-Guo Liu, Lei Wang, and Jiang-Ping Hu, <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.052306">Phys. Rev. A 99, 052306</a></p>
+</li>
+</ul>
+</div><!-- CONTENT ENDS HERE -->
+    
+
+    <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="page-footer footer font-small pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5>The Yao Framework</h5>
+          <p>Extensible Efficient Quantum Algorithm Design For Humans.</p>
+          <div class="copyright">
+            &copy; QuantumBFS. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+          </div>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Resources</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://tutorials.yaoquantum.org/dev/">Tutorial</a>
+            </li>
+            <li>
+              <a href="https://docs.yaoquantum.org/dev/">Docs</a>
+            </li>
+            <li>
+              <a href="https://github.com/QuantumBFS/Yao.jl/issues">Github Issues</a>
+            </li>
+            <li>
+              <a href="https://julialang.org/slack/">Slack</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+</footer>
+
+<script>
+    lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+    darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+
+    function onUpdate() {
+        if (matcher.matches) {
+            lightSchemeIcon.remove();
+            document.head.append(darkSchemeIcon);
+        } else {
+            document.head.append(lightSchemeIcon);
+            darkSchemeIcon.remove();
+        }
+    }
+
+    matcher = window.matchMedia('(prefers-color-scheme: dark)');
+    matcher.addListener(onUpdate);
+    onUpdate();
+</script>
+
+
+    <script>
+
+function createCopyButton(highlightDiv) {
+  const button = document.createElement("button");
+  button.className = "copy-code-button";
+  button.type = "button";
+  button.innerText = "Copy";
+  button.addEventListener("click", () => copyCodeToClipboard(button, highlightDiv));
+  addCopyButtonToDom(button, highlightDiv);
+}
+
+async function copyCodeToClipboard(button, highlightDiv) {
+  const codeToCopy = highlightDiv.querySelector(":last-child > code").innerText;
+  try {
+    result = await navigator.permissions.query({ name: "clipboard-write" });
+    if (result.state == "granted" || result.state == "prompt") {
+      await navigator.clipboard.writeText(codeToCopy);
+    } else {
+      copyCodeBlockExecCommand(codeToCopy, highlightDiv);
+    }
+  } catch (_) {
+    copyCodeBlockExecCommand(codeToCopy, highlightDiv);
+  }
+  finally {
+    codeWasCopied(button);
+  }
+}
+
+function copyCodeBlockExecCommand(codeToCopy, highlightDiv) {
+  const textArea = document.createElement("textArea");
+  textArea.contentEditable = 'true'
+  textArea.readOnly = 'false'
+  textArea.className = "copyable-text-area";
+  textArea.value = codeToCopy;
+  highlightDiv.insertBefore(textArea, highlightDiv.firstChild);
+  const range = document.createRange()
+  range.selectNodeContents(textArea)
+  const sel = window.getSelection()
+  sel.removeAllRanges()
+  sel.addRange(range)
+  textArea.setSelectionRange(0, 999999)
+  document.execCommand("copy");
+  highlightDiv.removeChild(textArea);
+}
+
+function codeWasCopied(button) {
+  button.blur();
+  button.innerText = "Copied!";
+  setTimeout(function() {
+    button.innerText = "Copy";
+  }, 2000);
+}
+
+function addCopyButtonToDom(button, highlightDiv) {
+  highlightDiv.insertBefore(button, highlightDiv.firstChild);
+  const wrapper = document.createElement("div");
+  wrapper.className = "highlight-wrapper";
+  highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
+  wrapper.appendChild(highlightDiv);
+}
+
+document.querySelectorAll(".highlight")
+  .forEach(highlightDiv => createCopyButton(highlightDiv));
+
+</script>
+
+
+    </div>
+    <script>
+      // there is only one pluto notebook load to page each time
+      var iframe = document.getElementsByClassName('plutopage')[0];
+      iframe.onload = function () {
+        iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+      }
+    </script>
+  </body>
+</html>

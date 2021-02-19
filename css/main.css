@@ -1,1 +1,161 @@
-@charset "utf-8";body{margin:0;padding:0;height:100%}.main{min-height:100%;position:relative;padding-bottom:200px}.navbar-yao{background-color:#2b5797}.nav-logo{padding:0}.jumbotron{margin-bottom:0;position:relative;border-bottom:1px thick;background-color:#2b5797;border-radius:0}.jumbotron .container{max-width:750px;box-shadow:2px;position:relative;padding:none;padding-top:32px;text-align:center;color:white}.features{padding-top:2em;padding-bottom:2em}.features p{color:gray}.quick-start{background-color:#EEE;padding-top:2em;padding-bottom:2em}.quick-start pre{border:1px solid #ddd;white-space:normal;background-color:lightgray;padding:.5em;overflow:auto;font-size:.9em;margin:1em 0;font-weight:400;vertical-align:middle}.discuss{padding-top:2em;padding-bottom:2em}.footer{height:200px;background-color:#2b5797;color:white;position:absolute;bottom:0;width:100%}.footer a{color:lightgray}.footer a:hover{color:#EEE;text-decoration:none !important}.page-container{margin:100px auto;max-width:600px;text-align:center}.page-container h1{margin:200px 0;font-size:4em;line-height:1;letter-spacing:-1px}.research-container{margin:100px auto;max-width:1000px;text-align:left}.research-container h2{padding-bottom:20px}.research-container li{padding-bottom:1em}#override-documenter .docs-sidebar ul.docs-menu{flex-grow:0 !important}.organizations{padding-top:2em;padding-bottom:2em}.organizations h3{color:gray}.highlight{position:relative;z-index:0;padding:0;margin:0;border-radius:4px;background-color:rgba(27,31,35,0.05)}.copy-code-button{position:absolute;z-index:2;right:0;top:0;font-size:13px;font-weight:700;line-height:14px;letter-spacing:.5px;width:65px;color:white;background-color:#2b5797;border:1.25px solid #2b5797;border-top-left-radius:0;border-top-right-radius:4px;border-bottom-right-radius:0;border-bottom-left-radius:4px;white-space:nowrap;padding:4px 4px 5px 4px;margin:0 0 0 1px;cursor:pointer;opacity:.6}
+body {
+    margin: 0px;
+    padding:0;
+    height:100%;
+}
+
+.main {
+    min-height:100%;
+    position:relative;
+    padding-bottom:200px;
+}
+
+.navbar-yao {
+    background-color: #2b5797;
+}
+
+.nav-logo {
+    padding: 0px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    position: relative;
+    border-bottom: 1px thick;
+    background-color: #2b5797;
+    border-radius: 0;
+}
+
+.jumbotron .container {
+    max-width: 750px;
+    box-shadow: 2px;
+    position: relative;
+    padding: none;
+    padding-top: 32px;
+    text-align: center;
+    color: white;
+}
+
+.features {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.features p {
+    color: gray;
+}
+
+.quick-start {
+    background-color: #EEEEEE;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.quick-start pre {
+    border: 1px solid #dddddd;
+    white-space: normal;
+    background-color: lightgray;
+    padding: 0.5em;
+    overflow: auto;
+    font-size: 0.9em;
+    margin: 1em 0px;
+
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.discuss {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.footer {
+    height:200px;
+    background-color: #2b5797;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: lightgray;
+}
+
+.footer a:hover {
+    color: #EEEEEE;
+    text-decoration: none !important; 
+}
+
+.page-container {
+    margin: 100px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+.page-container h1 {
+    margin: 200px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.research-container {
+    margin: 100px auto;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.research-container h2 {
+    padding-bottom: 20px;
+}
+
+.research-container li {
+    padding-bottom: 1em;
+}
+
+#override-documenter .docs-sidebar ul.docs-menu {
+    flex-grow: 0 !important;
+}
+
+.organizations {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.organizations h3 {
+    color: gray;
+}
+
+.highlight {
+    position: relative;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    background-color: rgba(27,31,35,0.05);
+}
+
+.copy-code-button {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    width: 65px;
+    color: white;
+    background-color: #2b5797;
+    border: 1.25px solid #2b5797;
+    border-top-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    white-space: nowrap;
+    padding: 4px 4px 5px 4px;
+    margin: 0 0 0 1px;
+    cursor: pointer;
+    opacity: 0.6;
+  }

@@ -1,7 +1,337 @@
-<!DOCTYPE html> <html lang=en > <meta charset=utf-8 > <meta name=viewport  content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv=x-ua-compatible  content="ie=edge"> <meta name=author  content="Xiu-Zhe Luo, Jin-guo Liu, Pan Zhang, Lei Wang et al."> <meta name=description  content="The official website for the Yao framework. Yao is a framework for quantum computing in JuliaLanguage. Click here to learn more."> <meta name=robots  content="max-image-preview:large"> <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <script async defer src="https://buttons.github.io/buttons.js"></script> <link rel=stylesheet  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin=anonymous > <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin=anonymous ></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity=sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns  crossorigin=anonymous ></script> <link rel=stylesheet  href="/css/page.css"> <link rel=stylesheet  href="/css/main.css"> <link rel=icon  href="/assets/favicon-dark.ico" id=dark-scheme-icon > <link rel=icon  href="/assets/favicon-light.ico" id=light-scheme-icon > <title>Yao - Quantum Computing in Julia</title> <title>Yao - Extensible</title> <header> <nav class="navbar navbar-expand-lg navbar-dark navbar-yao"> <a class="navbar-brand nav-logo" href="https://yaoquantum.org"> <img src="/assets/logo-light.svg" width=40 > </a> <button class=navbar-toggler  type=button  data-toggle=collapse  data-target="#navbarSupportedContent" aria-controls=navbarSupportedContent  aria-expanded=false  aria-label="Toggle navigation"> <span class=navbar-toggler-icon ></span> </button> <div class="collapse navbar-collapse" id=navbarSupportedContent > <ul class="navbar-nav mr-auto"> <li class="nav-item active"> <a class=nav-link  href="https://yaoquantum.org">Home <span class=sr-only >(current)</span></a> <li class=nav-item > <a class=nav-link  href="https://tutorials.yaoquantum.org/dev/">Tutorial</a> <li class=nav-item > <a class=nav-link  href="https://docs.yaoquantum.org/dev/">Documentation</a> <li class=nav-item > <a class=nav-link  href="/benchmark/">Benchmarks</a> <li class=nav-item > <a class=nav-link  href="/soc">SoC</a> <li class=nav-item > <a class=nav-link  href="/research">Research</a> <li class=nav-item > <a class=nav-link  href="#">GitHub</a> </ul> </div> </nav> </header> <div class=main > <div class=jumbotron > <div class=container > <div> <img src="assets/logo-light.png" width=150 > </div> <br /> <h4>Extensible, Efficient Quantum Algorithm Design For Humans</h4> <a class=github-button  href="https://github.com/QuantumBFS/Yao.jl" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon=octicon-star  data-size=large  data-show-count=true  aria-label="Star QuantumBFS/Yao.jl on GitHub">Star Us</a> </div> </div> <div class=features > <div class=container > <div class=row > <div class=col-md-10 > <h2 style="color: gray;">Features</h2> </div> <div class=col-md-2 > <a href="https://arxiv.org/abs/1912.10877"><i class="fa fa-arrow-right"></i> check our paper</a> </div> </div> <div class=row > <div class="col-md feature"> <h5>Quantum Blocks</h5> <p> An intermediate representation to construct and manipulate your quantum circuit and let you make own abstractions on quantum circuit in native Julia. </p> </div> <div class="col-md feature"> <h5>Differentiable</h5> <p> Yao supports both forward-mode (faithful gradient) and reverse-mode automatic differentiation with its builtin engine optimized specifically for quantum circuits. </p> </div> <div class="col-md feature"> <h5>Efficient</h5> <p> <a href="/benchmark">Top performance</a> for quantum circuit simulations. Its CUDA backend and batched quantum register support can make typical quantum circuits even faster. </p> </div> <div class="col-md feature"> <h5>Extensible</h5> <p> Yao is designed to be extensible. Its hierarchical architecture allows you to extend the framework to support and share your new algorithm and hardware. </p> </div> <div class="col-md feature"> <h5>Open Source</h5> <p> Yao is provided under the <a href="https://github.com/QuantumBFS/Yao.jl/blob/master/LICENSE.md">Apache License 2.0</a>, free for everyone to use. </p> </div> </div> </div> </div> <div class=quick-start > <div class=container > <div class=row > <div class=col-md > <h3>Quick Start </h3> <p> Yao is a &nbsp; <a href="https://julialang.org"> <img src="https://julialang.org/assets/infra/julia.ico" width=16em > Julia Language &nbsp; </a> package. To install Yao, please <a href="https://docs.julialang.org/en/v1/manual/getting-started/">open Julia's interactive session (known as REPL)</a> and press <kbd>]</kbd> key in the REPL to use the package mode, then type the following command </p> To install <strong>stable</strong> release <pre>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="author" content="Xiu-Zhe Luo, Jin-guo Liu, Pan Zhang, Lei Wang et al.">
+<meta name="description" content="The official website for the Yao framework. Yao is a framework for quantum computing in JuliaLanguage. Click here to learn more.">
+<meta name="robots" content="max-image-preview:large">
+
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Boostrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="/css/page.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" href="/assets/favicon-dark.ico" id="dark-scheme-icon">
+<link rel="icon" href="/assets/favicon-light.ico" id="light-scheme-icon">
+ <title>Yao - Quantum Computing in Julia</title>  
+
+        <title>Yao - Extensible</title>
+    </head>
+
+    <body>
+        <header>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-yao">
+    <a class="navbar-brand nav-logo" href="https://yaoquantum.org">
+        <img src="/assets/logo-light.svg" width="40">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="https://yaoquantum.org">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://tutorials.yaoquantum.org/dev/">Tutorial</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://docs.yaoquantum.org/dev/">Documentation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/benchmark/">Benchmarks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/soc">SoC</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/research">Research</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">GitHub</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+</header>
+<div class="main">
+
+        <div class="jumbotron">
+            <div class="container">
+                <div>
+                    <img src="assets/logo-light.png" width="150">
+                </div>
+                <br />
+                <h4>Extensible, Efficient Quantum Algorithm Design For Humans</h4>
+                <a class="github-button" href="https://github.com/QuantumBFS/Yao.jl" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star QuantumBFS/Yao.jl on GitHub">Star Us</a>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h2 style="color: gray;">Features</h2>
+                    </div>
+                    <div class="col-md-2">
+                        <a href="https://arxiv.org/abs/1912.10877"><i class="fa fa-arrow-right"></i> check our paper</a>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md feature">
+                        <h5>Quantum Blocks</h5>
+                        <p>
+                            An intermediate representation to construct and manipulate
+                            your quantum circuit and let you make own abstractions on
+                            quantum circuit in native Julia.
+                        </p>
+                    </div>
+        
+                    <div class="col-md feature">
+                        <h5>Differentiable</h5>
+                        <p>
+                            Yao supports both forward-mode (faithful gradient)
+                            and reverse-mode automatic differentiation with its builtin engine
+                            optimized specifically for quantum circuits.
+                        </p>
+                    </div>
+        
+                    <div class="col-md feature">
+                        <h5>Efficient</h5>
+                        <p>
+                            <a href="/benchmark">Top performance</a> for quantum circuit simulations. Its CUDA backend and
+                            batched quantum register support can make typical quantum circuits even faster.
+                        </p>
+                    </div>
+        
+                    <div class="col-md feature">
+                        <h5>Extensible</h5>
+                        <p>
+                            Yao is designed to be extensible. Its hierarchical architecture allows
+                            you to extend the framework to support and share your
+                            new algorithm and hardware.
+                        </p>
+                    </div>
+        
+                    <div class="col-md feature">
+                        <h5>Open Source</h5>
+                        <p>
+                            Yao is provided under the <a href="https://github.com/QuantumBFS/Yao.jl/blob/master/LICENSE.md">Apache License 2.0</a>, free for everyone to use.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="quick-start">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <h3>Quick Start </h3>
+                        <p>
+                            Yao is a &nbsp;
+                            <a href="https://julialang.org">
+                                <img src="https://julialang.org/assets/infra/julia.ico" width="16em">
+                                Julia Language &nbsp;
+                            </a> package. To install Yao,
+                            please <a href="https://docs.julialang.org/en/v1/manual/getting-started/">open
+                                Julia's interactive session (known as REPL)</a> and press <kbd>]</kbd> key in the REPL to use the package mode, then type the following command
+                        </p>
+        
+                        To install <strong>stable</strong> release
+        
+                        <pre>
                             add Yao
-                        </pre> To install CUDA version <pre>
+                        </pre>
+        
+                        To install CUDA version
+                        <pre>
                             add CuYao
-                        </pre> To install <strong>current master</strong> <pre>
+                        </pre>
+        
+                        To install <strong>current master</strong>
+                        <pre>
                             add Yao#master
-                        </pre> Check our <a href="http://tutorials.yaoquantum.org/dev">tutorials</a> and <a href="http://docs.yaoquantum.org/dev">documentation</a> for detailed guide of usage. </div> </div> </div> </div> <div class=discuss > <div class=container > <div class=row > <div class=col-md > <h3 style="color: gray;">Discuss</h3> </div> </div> <div class=row > <div class=col-md > <div class=card-group > <div class=card  style="width: 18rem;"> <div class=card-body > <h5 class=card-title ><i class="fab fa-github"></i> &nbsp; Github Issue</h5> <h6 class="card-subtitle mb-2 text-muted">The official repository of Yao</h6> <p class=card-text >Ask questions, join discussion and development through github issues.</p> <a href="https://github.com/QuantumBFS/Yao.jl/issues" class=card-link >Issues</a> <a href="https://github.com/QuantumBFS/Yao.jl/issues/new" class=card-link >Submit an Issue</a> </div> </div> <div class=card  style="width: 18rem;"> <div class=card-body > <h5 class=card-title ><i class="fab fa-slack"></i> &nbsp; Julia Slack</h5> <h6 class="card-subtitle mb-2 text-muted">#yao-dev #quantum-computing</h6> <p class=card-text >Browse and join discussion on quantum computing.</p> <a href="https://slackinvite.julialang.org" class=card-link >Click here to join</a> </div> </div> <div class=card  style="width: 18rem;"> <div class=card-body > <h5 class=card-title ><i class="fab fa-discourse"></i> &nbsp;Julia Discourse</h5> <h6 class="card-subtitle mb-2 text-muted">the official Julia discourse</h6> <p class=card-text >Ask a question in Quantum category.</p> <a href="https://discourse.julialang.org/" class=card-link >Julia Discourse</a> </div> </div> </div> </div> </div> </div> </div> <div class=organizations > <div class=container > <div class=row > <div class=col-md > <h3 style="color: gray;">Yao is currently supported by these organizations:</h3> </div> </div> <div class="row justify-content-md-center"> <div class="col-md-auto logo"> <a href="http://english.iop.cas.cn/"> <img src="/assets/ioplogo.png" width=100  style="margin-top: 50px;"> </a> </div> <div class="col-md-auto logo"> <a href="http://english.itp.cas.cn/"> <img src="/assets/itplogo.jpeg" width=110  style="margin-top: 45px;"> </a> </div> <div class="col-md-auto logo"> <a href="https://www.perimeterinstitute.ca/research/research-initiatives/perimeter-institute-quantum-intelligence-lab-piquil"> <img src="/assets/piquil.png" width=200  style="margin-top: 65px;"> </a> </div> <div class="col-md-auto logo"> <a href="https://unitary.fund/"> <img src="/assets/UF_newlogo_square.png" width=200  style="margin-top: 0px;"> </a> </div> </div> </div> </div> <footer class="page-footer footer font-small pt-4"> <div class="container-fluid text-center text-md-left"> <div class=row > <div class="col-md-6 mt-md-0 mt-3"> <h5>The Yao Framework</h5> <p>Extensible Efficient Quantum Algorithm Design For Humans.</p> <div class=copyright > &copy; QuantumBFS. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>. </div> </div> <hr class="clearfix w-100 d-md-none pb-3"> <div class="col-md-3 mb-md-0 mb-3"> </div> <div class="col-md-3 mb-md-0 mb-3"> <h5 class=text-uppercase >Resources</h5> <ul class=list-unstyled > <li> <a href="https://tutorials.yaoquantum.org/dev/">Tutorial</a> <li> <a href="https://docs.yaoquantum.org/dev/">Docs</a> <li> <a href="https://github.com/QuantumBFS/Yao.jl/issues">Github Issues</a> <li> <a href="https://julialang.org/slack/">Slack</a> </ul> </div> </div> </div> </footer> <script> lightSchemeIcon = document.querySelector('link#light-scheme-icon'); darkSchemeIcon = document.querySelector('link#dark-scheme-icon'); function onUpdate() { if (matcher.matches) { lightSchemeIcon.remove(); document.head.append(darkSchemeIcon); } else { document.head.append(lightSchemeIcon); darkSchemeIcon.remove(); } } matcher = window.matchMedia('(prefers-color-scheme: dark)'); matcher.addListener(onUpdate); onUpdate(); </script>
+                        </pre>
+        
+                        Check our <a href="http://tutorials.yaoquantum.org/dev">tutorials</a> and <a href="http://docs.yaoquantum.org/dev">documentation</a> for detailed guide of usage.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="discuss">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <h3 style="color: gray;">Discuss</h3>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card-group">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fab fa-github"></i> &nbsp; Github Issue</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">The official repository of Yao</h6>
+                                    <p class="card-text">Ask questions, join discussion and development through github issues.</p>
+                                    <a href="https://github.com/QuantumBFS/Yao.jl/issues" class="card-link">Issues</a>
+                                    <a href="https://github.com/QuantumBFS/Yao.jl/issues/new" class="card-link">Submit an Issue</a>
+                                </div>
+                            </div>
+            
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fab fa-slack"></i> &nbsp; Julia Slack</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">#yao-dev #quantum-computing</h6>
+                                    <p class="card-text">Browse and join discussion on quantum computing.</p>
+                                    <a href="https://slackinvite.julialang.org" class="card-link">Click here to join</a>
+                                </div>
+                            </div>
+            
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fab fa-discourse"></i> &nbsp;Julia Discourse</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">the official Julia discourse</h6>
+                                    <p class="card-text">Ask a question in Quantum category.</p>
+                                    <a href="https://discourse.julialang.org/" class="card-link">Julia Discourse</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="organizations">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <h3 style="color: gray;">Yao is currently supported by these organizations:</h3>
+                    </div>
+                </div>
+        
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto logo">
+                        <a href="http://english.iop.cas.cn/">
+                            <img src="/assets/ioplogo.png" width="100" style="margin-top: 50px;">
+                        </a>
+                    </div>
+        
+                    <div class="col-md-auto logo">
+                        <a href="http://english.itp.cas.cn/">
+                            <img src="/assets/itplogo.jpeg" width="110" style="margin-top: 45px;">
+                        </a>
+                    </div>
+        
+                    <div class="col-md-auto logo">
+                        <a href="https://www.perimeterinstitute.ca/research/research-initiatives/perimeter-institute-quantum-intelligence-lab-piquil">
+                            <img src="/assets/piquil.png" width="200" style="margin-top: 65px;">
+                        </a>
+                    </div>
+        
+                    <div class="col-md-auto logo">
+                        <a href="https://unitary.fund/">
+                            <img src="/assets/UF_newlogo_square.png" width="200" style="margin-top: 0px;">
+                        </a>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="page-footer footer font-small pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+      <!-- Grid row -->
+      <div class="row">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Content -->
+          <h5>The Yao Framework</h5>
+          <p>Extensible Efficient Quantum Algorithm Design For Humans.</p>
+          <div class="copyright">
+            &copy; QuantumBFS. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
+          </div>
+        </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Resources</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://tutorials.yaoquantum.org/dev/">Tutorial</a>
+            </li>
+            <li>
+              <a href="https://docs.yaoquantum.org/dev/">Docs</a>
+            </li>
+            <li>
+              <a href="https://github.com/QuantumBFS/Yao.jl/issues">Github Issues</a>
+            </li>
+            <li>
+              <a href="https://julialang.org/slack/">Slack</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+</footer>
+
+<script>
+    lightSchemeIcon = document.querySelector('link#light-scheme-icon');
+    darkSchemeIcon = document.querySelector('link#dark-scheme-icon');
+
+    function onUpdate() {
+        if (matcher.matches) {
+            lightSchemeIcon.remove();
+            document.head.append(darkSchemeIcon);
+        } else {
+            document.head.append(lightSchemeIcon);
+            darkSchemeIcon.remove();
+        }
+    }
+
+    matcher = window.matchMedia('(prefers-color-scheme: dark)');
+    matcher.addListener(onUpdate);
+    onUpdate();
+</script>
+
+
+
+    </body>
+</html>
