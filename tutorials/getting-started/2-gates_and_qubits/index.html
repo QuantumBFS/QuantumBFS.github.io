@@ -71,9 +71,10 @@
             <div class="tutorial-container">
                 <div class="sidebar">
 <div class="container sidebar-sticky">
-  <a class="sidebar-nav-item " href="/tutorials/"><b>Quick Start</b></a>
-  <br>
   <nav class="sidebar-nav" style="opacity: 0.9">
+    <div class="course-section"></div>
+    <br>
+    <a class="sidebar-nav-item " href="/tutorials/quick-start"><b>Quick Start</b></a>
     <div class="course-section">Getting Started</div>
 <a class="sidebar-nav-item " href="/tutorials/getting-started/1-introduction/"><b>Introduction</b></a>
 <a class="sidebar-nav-item active" href="/tutorials/getting-started/2-gates_and_qubits/"><b>Gates & Qubits</b></a>
@@ -187,8 +188,10 @@ allowfullscreen></iframe>
         <script>
             // there is only one pluto notebook load to page each time
             var iframe = document.getElementsByClassName('plutopage')[0];
-            iframe.onload = function () {
-            iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+            iframe.onload =  function () {
+                setTimeout(function() {
+                    iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+                }, 500);
             }
         </script>
     </body>

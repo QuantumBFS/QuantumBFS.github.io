@@ -24,8 +24,10 @@ function generate(title, file)
             <script>
                 // there is only one pluto notebook load to page each time
                 var iframe = document.getElementsByClassName('plutopage')[0];
-                iframe.onload = function () {
-                iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+                iframe.onload =  function () {
+                    setTimeout(function() {
+                        iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+                    }, 500);
                 }
             </script>
         </body>
@@ -66,9 +68,10 @@ function sidebar(sections)
     write("_layout/sidebar.html", """
     <div class="sidebar">
     <div class="container sidebar-sticky">
-      <a class="sidebar-nav-item {{ispage /tutorials/}}active{{end}}" href="/tutorials/"><b>Quick Start</b></a>
-      <br>
       <nav class="sidebar-nav" style="opacity: 0.9">
+        <div class="course-section"></div>
+        <br>
+        <a class="sidebar-nav-item {{ispage /tutorials/quick-start}}active{{end}}" href="/tutorials/quick-start"><b>Quick Start</b></a>
         $(join(section_htmls))
       </nav>
     </div>
@@ -98,5 +101,14 @@ pages = [
     ],
 ]
 
+generate("Quick Start", "quick-start")
 generate(pages)
 sidebar(pages)
+
+
+# ```math
+# \begin{aligned}
+# \frac{\partial \mathcal{L}}{\partial \theta^i_l} &= \langle K(x, y) \rangle_{x\sim p_{\theta^+}, y\sim p_{\theta}} - \langle K(x, y) \rangle_{x\sim p_{\theta}^-, y\sim p_{\theta}}\\
+# &- \langle K(x, y) \rangle _{x\sim p_{\theta^+}, y\sim\pi} + \langle K(x, y) \rangle_{x\sim p_{\theta^-}, y\sim\pi}
+# \end{aligned}
+# ```
