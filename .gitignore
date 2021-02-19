@@ -3,8 +3,8 @@ __site/
 franklin
 franklin.pub
 node_modules/
-notebooks/*.html
-notebooks/*.plutostate
+notebooks/**/**/*.html
+notebooks/**/**/*.plutostate
 tutorials/*
 !tutorials/make.jl
 !tutorials/index.html
