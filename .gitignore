@@ -7,3 +7,4 @@ notebooks/*.html
 notebooks/*.plutostate
 tutorials/*
 !tutorials/make.jl
+!tutorials/index.html

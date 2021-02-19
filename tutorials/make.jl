@@ -66,6 +66,7 @@ function sidebar(sections)
     write("_layout/sidebar.html", """
     <div class="sidebar">
     <div class="container sidebar-sticky">
+      <a class="sidebar-nav-item {{ispage /tutorials/}}active{{end}}" href="/tutorials/"><b>Quick Start</b></a>
       <br>
       <nav class="sidebar-nav" style="opacity: 0.9">
         $(join(section_htmls))

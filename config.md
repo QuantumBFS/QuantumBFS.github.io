@@ -10,7 +10,7 @@ The website_* must be defined for the RSS to work
 @def author = "QuantumBFS"
 @def title = "Yao - Quantum Computing in Julia"
 @def home_url = "https://yaoquantum.org"
-@def tutorial_url = "https://tutorials.yaoquantum.org/dev/"
+@def tutorial_url = "/tutorials/"
 @def benchmark_url = "/benchmark/"
 @def research_url = "/research/"
 @def docs_url = "https://docs.yaoquantum.org/dev/"
