@@ -35,7 +35,7 @@ function hfun_plutonotebookpage(params)
 
   return """
   <div class="content">
-  <iframe width="100%" height="100%"
+  <iframe id="myiFrame" width="100%" height="100%"
   src="$(path_to_html)"
   class="plutopage"
   frameborder="0"
