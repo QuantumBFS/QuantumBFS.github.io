@@ -21,7 +21,7 @@ function generate(title, file)
                 </div>
                 {{ insert foot_general.html }}
             </div>
-            <script>
+            <script src="iframe-resizer/iframeResizer.js" type="text/javascript">
                   iFrameResize({ log: true }, '#myiFrame')
             </script>
         </body>
