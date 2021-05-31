@@ -1,1 +1,0 @@
-iFrameResize({ log: true }, '#myiFrame')
