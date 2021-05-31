@@ -21,15 +21,6 @@ function generate(title, file)
                 </div>
                 {{ insert foot_general.html }}
             </div>
-            <script>
-                // there is only one pluto notebook load to page each time
-                var iframe = document.getElementsByClassName('plutopage')[0];
-                iframe.onload =  function () {
-                    setTimeout(function() {
-                        iframe.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-                    }, 500);
-                }
-            </script>
         </body>
     </html>
     """
