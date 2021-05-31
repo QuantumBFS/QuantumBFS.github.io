@@ -41,8 +41,8 @@ function hfun_plutonotebookpage(params)
   frameborder="0"
   allow="accelerometer; ambient-light-sensor; autoplay; battery; camera; display-capture; document-domain; encrypted-media; execution-while-not-rendered; execution-while-out-of-viewport; fullscreen; geolocation; gyroscope; layout-animations; legacy-image-formats; magnetometer; microphone; midi; navigation-override; oversized-images; payment; picture-in-picture; publickey-credentials-get; sync-xhr; usb; wake-lock; screen-wake-lock; vr; web-share; xr-spatial-tracking"
   allowfullscreen></iframe>
-  <script src="/libs/iframe-resizer/iframeResizer.min.js"></script>
-  <script src="/libs/iframe-resizer/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.2.11/js/iframeResizer.min.js"></script>
+  <script> iFrameResize({ log: true }, '#myiFrame') </script>
   <a class="smallscreenlink" href="$(path_to_html)"></a></div>
   """
 end
