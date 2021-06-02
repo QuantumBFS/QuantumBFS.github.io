@@ -43,6 +43,16 @@ function hfun_plutonotebookpage(params)
   allowfullscreen></iframe>
   <script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.2.11/js/iframeResizer.min.js"></script>
   <script> iFrameResize({ log: true }, '#myiFrame') </script>
+  <script> 
+	window.addEventListener("load", function() 
+	{
+    		window.dispatchEvent(new Event('resize'));
+	});
+ 
+	window.onresize = function() {
+		document.getElementById('myiFrame').style.height = 0;
+	}	
+  </script>
   <a class="smallscreenlink" href="$(path_to_html)"></a></div>
   """
 end
