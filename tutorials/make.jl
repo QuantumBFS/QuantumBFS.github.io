@@ -67,8 +67,8 @@ function sidebar(sections)
     """)
 end
 
-import PlutoUtils
-PlutoUtils.Export.github_action(;export_dir=".", baked_state=false)
+import PlutoSliderServer
+PlutoSliderServer.github_action(;Export_baked_state=false)
 
 ispath("__site/notebooks") || mkpath("__site/notebooks")
 cp("notebooks", "__site/notebooks"; force=true)
