@@ -16,14 +16,14 @@ jobs:
     - name: Install python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'
+        python-version: '3.9'
     # NOTE: Here you can install dependencies such as matplotlib if you use
     # packages such as PyPlot.
     # - run: pip install matplotlib
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
       with:
-        version: 1.5
+        version: 1.6.1
     - name: Instantiate Deploy Environment
       run: julia --project=pluto-depoly-environment -e 'using Pkg;Pkg.instantiate()'
     - name: Print Env Status
