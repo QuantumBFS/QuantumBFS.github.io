@@ -5,13 +5,19 @@
 }
 
 .sidebar {
-    min-width: 250px;
+    min-width: 260px;
     max-width: 250px;
     z-index: 2;
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
-    background-color: #282936;
+    background-color: #0d3940;
     text-align: center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    font-weight: lighter;
+    padding-top: 10px;
+    font-family: monospace;
 }
 
 .sidebar-nav {
@@ -20,6 +26,8 @@
 .sidebar-nav-item {
     display: block;
     line-height: 1.75;
+    text-align: left;
+    padding-left: 20px;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
@@ -57,7 +65,8 @@ a.sidebar-nav-item:focus {
 .sidebar-nav .course-section::after {
     content: " ";
     flex: 1;
-    border-bottom: 1px dashed #d9a200;
+    border-bottom: 1px dashed coral;
+    
 }
 .sidebar-nav .course-section::before {
     margin-right: 0.25em;
