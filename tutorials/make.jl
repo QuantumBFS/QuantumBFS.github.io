@@ -58,7 +58,7 @@ function sidebar(sections)
         """)
     end
     write("_layout/sidebar.html", """
-    <div class="sidebar">
+    <div id="sidebar" class="sidebar">
     <div class="container sidebar-sticky">
       <nav class="sidebar-nav" style="opacity: 0.9">
         $(join(section_htmls))
