@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.14.7
 
 using Markdown
 using InteractiveUtils
@@ -7,7 +7,6 @@ using InteractiveUtils
 # ╔═╡ 41e660a2-0d51-4a05-aacd-a78728d77b1c
 md"""
 ### Variables and Some Basic Types
-
 In Julia, you can define a variable similar to how you define it in Python, e.g we can define a `x` using `=` (assignment)
 """
 
@@ -26,7 +25,6 @@ md"By default Julia displays the output of the last operation. (You can suppress
 # ╔═╡ 905f2ff2-29fe-4c65-b955-f1a6675ff965
 md"""
 ### Functions
-
 In Julia, you can also define short-form, one-line functions using `=` (assignment) similar to how you write things mathematically.
 """
 
@@ -54,7 +52,6 @@ end
 # ╔═╡ 04f8a8d5-1bbb-42df-a0d0-ed80aa0ce957
 md"""
 ### Control Flows
-
 In Julia, there are `for`, `if` and `while`, they look like the following
 """
 
@@ -95,12 +92,9 @@ end
 # ╔═╡ c7a414ca-a016-4959-8e06-080907ff244c
 md"""
 ### Matrix and Array
-
 Julia carries its own `Array` type, if you use Python, it is similar to `numpy.array` in Python except:
-
 1. index starts from 1
 2. the multi-dimensional index is column-wise
-
 You can also have list comprehension:
 """
 
@@ -122,7 +116,6 @@ rand(5, 5)
 # ╔═╡ 749bf936-eefc-4dd5-b495-939d82f496a0
 md"""
 if you have question about using a function, you can always type question mark `?` in your REPL following the function name
-
 ```julia
 julia> ?rand
 ```
@@ -131,25 +124,18 @@ julia> ?rand
 # ╔═╡ 0571129d-bdbf-4ff4-b607-dacb6d6d3911
 md"""
 ### Package Manager & Environments
-
 Julia carries its own package manager, you can use it as a normal package:
-
 ```julia
 julia> using Pkg
 ```
-
 to install a pacakge, you can use
-
 ```julia
 julia> Pkg.add("Yao")
 ```
-
 to remove a pacakge, you can use
-
 ```julia
 julia> Pkg.rm("Yao")
 ```
-
 All Julia program **runs inside an environment**, it is the global environment by default. It is usually recommended to run your notebook in a local environment, so we won't hit **any version conflicts** between different packages. 
 """
 
