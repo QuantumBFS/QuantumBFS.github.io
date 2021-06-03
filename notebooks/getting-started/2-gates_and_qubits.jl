@@ -1,8 +1,17 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.14.7
 
 using Markdown
 using InteractiveUtils
+
+# ╔═╡ aa705f1a-be37-4dff-8a74-0e855adf6143
+begin
+	# setting up an empty package environment
+	using Pkg
+	Pkg.activate(mktempdir())
+	Pkg.add("Yao")
+	Pkg.add("YaoPlots")
+end
 
 # ╔═╡ 653cd9ec-01a9-11eb-2e64-3f7ae853eb87
 begin
@@ -105,7 +114,68 @@ plot(chain(2,control(1,2=>X)))
 # ╔═╡ a9ab153c-0256-11eb-093f-71fa576c4034
 md" **_Note:_** *To represent a system of two qubits, `` a_1 |00〉 + a_2 |01〉 + a_3 |10〉 + a_4 |11〉`` in vector form, we can write them as, `` \begin{bmatrix} a_1 \\a_2 \\a_3\\a_4 \end{bmatrix} ``, where `` |a_1^2| + |a_2^2| + |a_3^2| + |a_4^2| = 1. `` Also, we can use the CNOT or Control NOT or any other control gate(CY and CZ) to entangle two qubits.*"
 
+# ╔═╡ 71906e2e-4421-4b63-96e3-bcbfdfb2e176
+
+
+# ╔═╡ 3a6dcd6f-53f1-4e38-8f0c-bf6b400ef15c
+
+
+# ╔═╡ 8eebb5bf-59cc-491c-a7ed-0d1f8f7fb999
+
+
+# ╔═╡ c13725a5-0146-4b14-a4d9-05faa67d4d46
+
+
+# ╔═╡ 6410dae1-1219-4c78-9f53-773e08142d90
+
+
+# ╔═╡ 654f582c-feac-42fc-9573-7a16e98204b5
+
+
+# ╔═╡ db15bc21-4167-40f0-92ca-52a393d275ad
+
+
+# ╔═╡ f287d028-3863-4683-a4f3-29c041c4d940
+
+
+# ╔═╡ cab9506e-4d9b-4a10-a578-6aedd67fbcb1
+
+
+# ╔═╡ b48f262c-32ff-4b9f-9015-56207e0bc97f
+
+
+# ╔═╡ e4bb4eb3-9713-4763-b0a8-93d6c542b6db
+
+
+# ╔═╡ a77935db-b701-461e-a7d7-bbf7be0eb347
+
+
+# ╔═╡ 716c4ec8-e79a-434e-a36d-85a8c3e20129
+
+
+# ╔═╡ ce2804a9-c201-4e1d-a649-e3d82d5ca6ab
+
+
+# ╔═╡ 3fffe5ca-fdf9-44db-8ee3-a55379148e99
+
+
+# ╔═╡ 806d60e9-8835-420a-9233-a99900cb3520
+
+
+# ╔═╡ c40bce05-f3d8-4840-a650-bae1da4350b8
+
+
+# ╔═╡ 98c41eba-2d7a-4806-9f9b-dedc4df45402
+
+
+# ╔═╡ 273195e2-a1ae-4594-ad69-bb20478973c8
+
+
+# ╔═╡ 830ba78f-ab52-4783-89cb-47c9f70911d5
+
+
 # ╔═╡ Cell order:
+# ╠═aa705f1a-be37-4dff-8a74-0e855adf6143
 # ╟─6c350302-00b5-11eb-0537-cd523683f91c
 # ╟─0260bd12-00b6-11eb-19e9-81c90f08fe7b
 # ╟─df131fc4-00b9-11eb-09ed-9dcb647f6fda
@@ -125,3 +195,23 @@ md" **_Note:_** *To represent a system of two qubits, `` a_1 |00〉 + a_2 |01〉
 # ╟─7edff156-0233-11eb-024b-090b7ae6481a
 # ╟─f21da5fc-024f-11eb-355b-09ce90c6f7f6
 # ╟─a9ab153c-0256-11eb-093f-71fa576c4034
+# ╠═71906e2e-4421-4b63-96e3-bcbfdfb2e176
+# ╠═3a6dcd6f-53f1-4e38-8f0c-bf6b400ef15c
+# ╠═8eebb5bf-59cc-491c-a7ed-0d1f8f7fb999
+# ╠═c13725a5-0146-4b14-a4d9-05faa67d4d46
+# ╠═6410dae1-1219-4c78-9f53-773e08142d90
+# ╠═654f582c-feac-42fc-9573-7a16e98204b5
+# ╠═db15bc21-4167-40f0-92ca-52a393d275ad
+# ╠═f287d028-3863-4683-a4f3-29c041c4d940
+# ╠═cab9506e-4d9b-4a10-a578-6aedd67fbcb1
+# ╠═b48f262c-32ff-4b9f-9015-56207e0bc97f
+# ╠═e4bb4eb3-9713-4763-b0a8-93d6c542b6db
+# ╠═a77935db-b701-461e-a7d7-bbf7be0eb347
+# ╠═716c4ec8-e79a-434e-a36d-85a8c3e20129
+# ╠═ce2804a9-c201-4e1d-a649-e3d82d5ca6ab
+# ╠═3fffe5ca-fdf9-44db-8ee3-a55379148e99
+# ╠═806d60e9-8835-420a-9233-a99900cb3520
+# ╠═c40bce05-f3d8-4840-a650-bae1da4350b8
+# ╠═98c41eba-2d7a-4806-9f9b-dedc4df45402
+# ╠═273195e2-a1ae-4594-ad69-bb20478973c8
+# ╠═830ba78f-ab52-4783-89cb-47c9f70911d5
