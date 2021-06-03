@@ -43,7 +43,7 @@ jobs:
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);
             using Franklin;
             optimize(;minify=false);'
-    - run: cd __site/notebooks && find . -xdev -type f -name '*.html' -print | while read filename; do        sed -i '$ i <script>document.body.getElementsByTagName('main')[0].getElementsByTagName('pluto-notebook')[0].setAttribute("data-iframe-height", "iFrameResizer");</script><script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.2.11/js/iframeResizer.contentWindow.min.js"></script>' "${filename}"; done
+    - run: cd __site/notebooks && find . -xdev -type f -name '*.html' -print | while read filename; do        sed -i '$ i <script>document.body.getElementsByTagName("main")[0].getElementsByTagName("pluto-notebook")[0].setAttribute("data-iframe-height", "iFrameResizer");</script><script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.2.11/js/iframeResizer.contentWindow.min.js"></script>' "${filename}"; done
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
