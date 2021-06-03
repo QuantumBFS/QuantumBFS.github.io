@@ -17,6 +17,7 @@ function generate(title, file)
 
                 <div class="tutorial-container">
                     {{ insert sidebar.html }}
+                    {{ insert sidebar-toggler.html }}
                     {{ plutonotebookpage /notebooks/$file.jl }}
                 </div>
                 {{ insert foot_general.html }}
