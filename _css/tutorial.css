@@ -18,6 +18,7 @@
     font-weight: lighter;
     padding-top: 10px;
     font-family: monospace;
+    direction: rtl;
 }
 
 @media only screen and (max-width: 600px) {
@@ -28,6 +29,7 @@
 
 .sidebar-nav {
     margin-bottom: 1rem;
+    direction: ltr;
 }
 .sidebar-nav-item {
     display: block;
