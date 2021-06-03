@@ -76,7 +76,7 @@ cp("notebooks", "__site/notebooks"; force=true)
 pages = [
     ("Quick Start", "quick-start") => [
         "Setup Your Environment" => "0.setup",
-        "Julia Basics" => "1.julia_basics",
+        "Julia Basics" => "1-julia_basics",
         "Yao Basics" => "2.yao_basics",
     ],
     ("Getting Started", "getting-started") => [
