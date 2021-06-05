@@ -16,10 +16,9 @@ function generate(title, file)
                 </header>
 
                 <div class="tutorial-container">
-                    {{ insert sidebar-toggler.html }}
                     {{ insert sidebar.html }}
-                    {{ insert go_to_top.html }}
                     {{ plutonotebookpage /notebooks/$file.jl }}
+                    {{ insert sidebarjumper.html }}
                 </div>
                 {{ insert foot_general.html }}
             </div>
