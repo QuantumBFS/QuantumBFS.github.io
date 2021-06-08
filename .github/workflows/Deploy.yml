@@ -16,14 +16,14 @@ jobs:
     - name: Install python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'
+        python-version: '3.9'
     # NOTE: Here you can install dependencies such as matplotlib if you use
     # packages such as PyPlot.
     # - run: pip install matplotlib
     - name: Install Julia
       uses: julia-actions/setup-julia@v1
       with:
-        version: 1.5
+        version: 1.6.1
     - name: Instantiate Deploy Environment
       run: julia --project=pluto-depoly-environment -e 'using Pkg;Pkg.instantiate()'
     - name: Print Env Status
@@ -43,7 +43,7 @@ jobs:
             using NodeJS; run(`$(npm_cmd()) install highlight.js`);
             using Franklin;
             optimize(;minify=false);'
-    - run: cd __site/notebooks && find . -xdev -type f -name '*.html' -print | while read filename; do        sed -i '$ i <script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.2.11/js/iframeResizer.contentWindow.min.js"></script>' "${filename}"; done
+    - run: cd __site/notebooks && find . -xdev -type f -name '*.html' -print | while read filename; do        sed -i '$ i <script>document.onreadystatechange = () => {if (document.readyState === "complete") { document.body.getElementsByTagName("main")[0].getElementsByTagName("pluto-notebook")[0].setAttribute("data-iframe-height", "iFrameResizer"); }}; </script><script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.2.11/js/iframeResizer.contentWindow.min.js"></script>' "${filename}"; done
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:

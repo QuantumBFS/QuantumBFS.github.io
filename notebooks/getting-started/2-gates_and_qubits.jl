@@ -1,8 +1,17 @@
 ### A Pluto.jl notebook ###
-# v0.12.20
+# v0.14.7
 
 using Markdown
 using InteractiveUtils
+
+# ╔═╡ aa705f1a-be37-4dff-8a74-0e855adf6143
+begin
+	# setting up an empty package environment
+	using Pkg
+	Pkg.activate(mktempdir())
+	Pkg.add("Yao")
+	Pkg.add("YaoPlots")
+end
 
 # ╔═╡ 653cd9ec-01a9-11eb-2e64-3f7ae853eb87
 begin
@@ -106,6 +115,7 @@ plot(chain(2,control(1,2=>X)))
 md" **_Note:_** *To represent a system of two qubits, `` a_1 |00〉 + a_2 |01〉 + a_3 |10〉 + a_4 |11〉`` in vector form, we can write them as, `` \begin{bmatrix} a_1 \\a_2 \\a_3\\a_4 \end{bmatrix} ``, where `` |a_1^2| + |a_2^2| + |a_3^2| + |a_4^2| = 1. `` Also, we can use the CNOT or Control NOT or any other control gate(CY and CZ) to entangle two qubits.*"
 
 # ╔═╡ Cell order:
+# ╠═aa705f1a-be37-4dff-8a74-0e855adf6143
 # ╟─6c350302-00b5-11eb-0537-cd523683f91c
 # ╟─0260bd12-00b6-11eb-19e9-81c90f08fe7b
 # ╟─df131fc4-00b9-11eb-09ed-9dcb647f6fda
