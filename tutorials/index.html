@@ -69,12 +69,12 @@
             </header>
 
             <div class="tutorial-container">
-                <div class="sidebar">
+                <div id="sidebar" class="sidebar">
 <div class="container sidebar-sticky">
   <nav class="sidebar-nav" style="opacity: 0.9">
     <div class="course-section">Quick Start</div>
 <a class="sidebar-nav-item " href="/tutorials/quick-start/0.setup/"><b>Setup Your Environment</b></a>
-<a class="sidebar-nav-item " href="/tutorials/quick-start/1.julia_basics/"><b>Julia Basics</b></a>
+<a class="sidebar-nav-item " href="/tutorials/quick-start/1-julia_basics/"><b>Julia Basics</b></a>
 <a class="sidebar-nav-item " href="/tutorials/quick-start/2.yao_basics/"><b>Yao Basics</b></a>
 
 <br>
@@ -100,6 +100,19 @@
                 <div class="page">
                     <h1>Welcome To Yao Tutorial</h1>
                 </div>
+                <div id="sidebar-toggler">
+  <button type="button" id="toggler" onclick="document.getElementById('sidebar').style.display = document.getElementById('sidebar').style.display === 'none' ? 'block' : 'none'"> 
+    <svg viewBox="0 0 100 80" style="fill: teal;background: none;" width="30" height="30">
+      <rect width="100" height="20"></rect>
+      <rect y="30" width="100" height="20"></rect>
+      <rect y="60" width="100" height="20"></rect>
+    </svg> 
+  </button>
+  <button type="button" onclick="window.scrollTo(0, 0)" id="jumper"> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15 8v-5l9 10.03-9 9.97v-5c-15 0-19.167-15.167-10.606-17.013-3.805 2.938 3.252 7.473 10.606 7.013z"></path></svg> 
+  </button>
+</div>
+
             </div>
             
 

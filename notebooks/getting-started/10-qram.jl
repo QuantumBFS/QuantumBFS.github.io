@@ -11,6 +11,7 @@ begin
 	Pkg.Registry.update()
 	Pkg.add("Yao")
 	Pkg.add("YaoPlots")
+	Pkg.add("StatsBase")
 end
 
 # ╔═╡ fe142e4e-46dd-11eb-3b8b-79a5e76789a5
