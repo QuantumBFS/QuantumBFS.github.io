@@ -20,6 +20,34 @@
     font-family: monospace;
 }
 
+#sidebar-toggler {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background: #0d3940;
+    z-index: 19;
+    opacity: 0.4;
+}
+
+#toggler {
+    padding: 0;
+    border: none;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+    background: none;
+}
+
+#jumper {
+    padding: 0;
+    border: none;
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    transform: rotate(-90deg);
+    background: none;
+}
+    
 @media only screen and (max-width: 600px) {
   .sidebar {
     display: none;
