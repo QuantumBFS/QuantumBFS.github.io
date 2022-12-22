@@ -17,7 +17,7 @@
 <li><p>How to write a Quantum Circuit Born Machine using Yao</p>
 </li>
 </ol>
-</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØ¡¨Í¨¬rootassigneeÀ§cell_idÙ$c788534a-ee16-4972-91ce-b0b3ed2799fa¹depends_on_disabled_cellsÂ§runtimeÍEì§erroredÂÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35ˆ¦queuedÂ±published_objects€§runningÂ¦output…¤bodyÚ%<div class="markdown"><h2>Julia Basics</h2>
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØèùo°ôw¬rootassigneeÀ§cell_idÙ$c788534a-ee16-4972-91ce-b0b3ed2799fa¹depends_on_disabled_cellsÂ§runtimeÍKd§erroredÂÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35ˆ¦queuedÂ±published_objects€§runningÂ¦output…¤bodyÚ%<div class="markdown"><h2>Julia Basics</h2>
 <p>You can jump to next section if you already know how to use Julia. We will only be introduce some basic concepts of Julia and differences comparing to Python in this section, if you wish to learn this language more seriously please refer to the learning materials on the official website: <a href="https://julialang.org/learning/">julialang.org/learning/</a>. This short Julia tutorial is based on <a href="https://computationalthinking.mit.edu/">MIT computational thinking course</a>.</p>
 <p>If you haven&#39;t installed Julia, please refer to the front page of Julia: <a href="https://julialang.org/">julialang.org</a></p>
 <p>If you wish to run this notebook locally, you will need to install <a href="https://github.com/fonsp/Pluto.jl">Pluto</a>:</p>
@@ -33,7 +33,7 @@
 
 julia&gt; Pluto.run&#40;&#41;</code></pre>
 <p>now it should open a web page for you in the browser, choose the downloaded notebook file <code>quick-start.jl</code>, you are good to go&#33;</p>
-</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØ¡¨Í„'È¬rootassigneeÀ§cell_idÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35¹depends_on_disabled_cellsÂ§runtimeÍG§erroredÂ±cell_dependencies‚Ù$c788534a-ee16-4972-91ce-b0b3ed2799fa„´precedence_heuristic§cell_idÙ$c788534a-ee16-4972-91ce-b0b3ed2799fa´downstream_cells_map€²upstream_cells_map‚§@md_str¨getindexÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35„´precedence_heuristic§cell_idÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35´downstream_cells_map€²upstream_cells_map‚§@md_str¨getindex´cell_execution_order’Ù$c788534a-ee16-4972-91ce-b0b3ed2799faÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35©shortpathª0.setup.jl®process_status¨starting¤pathÙ\/home/runner/work/QuantumBFS.github.io/QuantumBFS.github.io/notebooks/quick-start/0.setup.jlªcell_order’Ù$c788534a-ee16-4972-91ce-b0b3ed2799faÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35«cell_inputs‚Ù$c788534a-ee16-4972-91ce-b0b3ed2799fa„§cell_idÙ$c788534a-ee16-4972-91ce-b0b3ed2799fa°running_disabledÂ¤codeÚxmd"""
+</div>°persist_js_stateÂ¤mime©text/html²last_run_timestampËAØèùo³tÚ¬rootassigneeÀ§cell_idÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35¹depends_on_disabled_cellsÂ§runtimeÍGà§erroredÂ±cell_dependencies‚Ù$c788534a-ee16-4972-91ce-b0b3ed2799fa„´precedence_heuristic§cell_idÙ$c788534a-ee16-4972-91ce-b0b3ed2799fa´downstream_cells_map€²upstream_cells_map‚§@md_str¨getindexÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35„´precedence_heuristic§cell_idÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35´downstream_cells_map€²upstream_cells_map‚§@md_str¨getindex´cell_execution_order’Ù$c788534a-ee16-4972-91ce-b0b3ed2799faÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35©shortpathª0.setup.jl®process_status¨starting¤pathÙ\/home/runner/work/QuantumBFS.github.io/QuantumBFS.github.io/notebooks/quick-start/0.setup.jlªcell_order’Ù$c788534a-ee16-4972-91ce-b0b3ed2799faÙ$01ebf798-c068-4115-9cb9-381f5d8e8b35«cell_inputs‚Ù$c788534a-ee16-4972-91ce-b0b3ed2799fa„§cell_idÙ$c788534a-ee16-4972-91ce-b0b3ed2799fa°running_disabledÂ¤codeÚxmd"""
 # Quick Start Guide
 
 This guide is for people who:
@@ -72,4 +72,4 @@ julia> Pluto.run()
 ```
 
 now it should open a web page for you in the browser, choose the downloaded notebook file `quick-start.jl`, you are good to go!
-"""«code_foldedÃ«notebook_idÙ$2279aa32-d7af-11ec-1ed6-1d108135be0f«in_temp_dirÂ
+"""«code_foldedÃ«notebook_idÙ$574739b0-81b6-11ed-3b22-f70e9ad7dd1a«in_temp_dirÂ
